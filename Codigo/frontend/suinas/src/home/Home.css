@@ -1,0 +1,397 @@
+/* Coluna da esquerda */
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 20px;
+  background-color: #1e1e1e;
+  /* margin: 20px 20px ; */
+  height: 500px;
+  overflow: hidden;
+  padding: 20px 20px 0px 20px;
+}
+
+.directory-text {
+  font-size: 1.2em;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+
+  white-space: nowrap; /* Impede quebra de linha */
+  overflow: hidden; /* Oculta o conteúdo que ultrapassar */
+  text-overflow: ellipsis; /* Adiciona "..." ao final do texto */
+  margin: 0; /* Remove margens */
+  line-height: 1; /* Ajusta a altura da linha para centralização */
+  
+}
+
+/* Container rolável para arquivos e pastas */
+.scrollable-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  /* Define o grid responsivo */
+  grid-auto-rows: 130px;
+  gap: 10px;
+  /* Espaço entre os itens */
+  overflow-y: auto;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+/* Coluna da direita */
+.right-column {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  align-items: center;
+}
+
+/* Container para arrastar e soltar arquivos */
+.drag-drop-container {
+  /* border: 1px dashed #aaa; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #1e1e1e;
+  /* width: 400px; */
+}
+
+.drag-area {
+  font-size: 1.1em;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.upload-text {
+  color: #007bff;
+  font-family: "IBM Plex Mono", monospace;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.send-file {
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #1e1e1e;
+}
+
+.send-file p:first-child {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.send-file button {
+  margin: 10px 0;
+  padding: 8px 10em;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  background-color: #03a126;
+}
+
+.send-file button:hover {
+  background-color: #00891e;
+}
+
+.file-upload {
+  width: 50%;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  /* Transição suave */
+  border-radius: 8px;
+
+  /* Estilo para o estado normal */
+  background-color: transparent;
+}
+
+.item-container:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Cor de fundo ao passar o mouse */
+}
+
+.item-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.item-name {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;        /* Impede a quebra de linha */
+  overflow: hidden;           /* Oculta o excesso de texto */
+  text-overflow: ellipsis;    /* Adiciona as reticências */
+  max-width: 100%;            /* Define uma largura máxima (ajuste conforme necessário) */
+}
+
+/* Home.css */
+
+/* Estilo básico para a estrutura */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-column,
+.right-column {
+  width: 48%;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.item-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.item-name {
+  font-size: 16px;
+}
+
+.upload-text {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.drag-drop-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.file-upload {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  /* Alinha ícone e texto verticalmente */
+  justify-content: center;
+  /* Centraliza conteúdo no botão */
+  padding: 10px 15px;
+  /* Ajusta o espaço interno do botão */
+  border: none;
+  border-radius: 5px;
+  /* Deixa os botões levemente arredondados */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bebebe; /* Adiciona um efeito de hover */
+}
+
+.button-container {
+  display: flex;
+  /* Alinha itens em linha */
+  gap: 10px;
+  /* Espaçamento entre os botões */
+}
+
+.header-container {
+  display: flex; /* Alinha itens em linha */
+  align-items: center; /* Centraliza verticalmente os itens */
+  gap: 20px; /* Espaçamento entre os botões e o texto */
+  width: 100%; /* Garante que o contêiner ocupe toda a largura */
+}
+
+.sign-up-socorro{
+   height: 50px;
+   align-self: center;
+   background-color: lightgreen;
+}
+
+.login-socorro{
+  height: 50px;
+  align-self: center;
+  background-color: lightblue;
+}
+
+.logout {
+  position: fixed; /* Fixa o botão em relação à janela */
+  top: 20px; /* Ajusta a distância do topo */
+  right: 20px; /* Ajusta a distância da direita */
+  z-index: 1000; /* Garante que esteja acima de outros elementos */
+  height: 50px;
+  align-self: center;
+  background-color: rgb(255, 68, 68);
+  padding: 10px 20px; /* Ajusta o espaço interno */
+  color: white; /* Cor do texto */
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: red; /* Efeito ao passar o mouse */
+}
+
+.right-column-bottom {
+  width: 300px;
+  margin-top: 20px; /* Espaçamento entre o retângulo e a coluna da direita */
+  display: flex;
+  justify-content: center;
+}
+
+.rectangle {
+  width: 100%;
+  height: 100px; /* Ajuste a altura conforme necessário */
+  border-radius: 20px;
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+}
+
+/* Context Menu */
+.context-menu {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 150px; /* Define um tamanho fixo para o menu */
+  padding: 5px 0; /* Ajusta o padding para não ser excessivo */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.context-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.context-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.context-menu button {
+  all: unset; /* Remove estilos padrões do botão */
+  display: block;
+  width: 100%; /* Garante que o botão ocupe a largura do container */
+  padding: 8px 12px;
+  text-align: center; /* Centraliza o texto horizontalmente */
+  line-height: 1.5; /* Ajusta o espaçamento vertical */
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.2s, color 0.2s;
+  border: none;
+  box-sizing: border-box; /* Inclui padding no cálculo de largura/altura */
+}
+
+.context-menu button:hover {
+  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}
+
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 954px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .left-column {
+    order: 2;
+    /* Deixa a coluna da esquerda embaixo */
+  }
+
+  .right-column {
+    order: 1;
+    /* Deixa a coluna da direita em cima */
+  }
+
+  .item-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  .item-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .item-name {
+    font-size: 14px;
+  }
+
+  .drag-drop-container {
+    margin-top: 20px;
+  }
+
+  .file-upload {
+    width: 80px;
+    height: 80px;
+  }
+
+  .upload-text {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .logout {
+    top: 10px; /* Reduz a distância do topo */
+    right: 10px; /* Reduz a distância da direita */
+    padding: 8px 16px; /* Ajusta o espaçamento interno */
+    font-size: 14px; /* Reduz o tamanho da fonte */
+    height: auto; /* Permite ajuste automático da altura */
+    width: auto;
+  }
+
+  .logout:hover {
+    background-color: red; /* Mantém o efeito de hover */
+  }
+}

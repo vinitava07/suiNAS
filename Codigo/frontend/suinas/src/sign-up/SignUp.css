@@ -1,0 +1,127 @@
+.fields {
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px; 
+    font-weight: 300;
+  }
+  
+.terms-conditions{
+    color: white;
+  }
+  
+.terms-conditions:hover{
+    color: #eb8d82;
+  }
+  
+input[type="checkbox"] {
+    accent-color: #eb8d82;
+    cursor: pointer;
+  }
+.background-signup{
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+.background-login{
+  background-color: #1E1E1E;
+    border-radius: 10px;
+    height: 10%;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+input[type="text"] {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    height: 25px;
+    background-color: #393939;
+    color: white;
+  }
+input[type="password"] {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    height: 25px;
+    background-color: #393939;
+    color: white;
+  }
+h1{
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 30px; 
+    font-weight: 400;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  gap: 57px;
+}
+
+.create-button{
+    background-color: #03A126;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px;
+    width: 60%;
+    
+}
+
+.create-button, .login-button {
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Garante que o botão ocupe uma linha */
+}
+
+
+
+.create-button:hover{
+background-color: #00891e;}
+
+
+.login-button{
+  background-color: #03A126;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px;
+  width: 60%;
+}
+
+.login-button:hover{
+background-color: #00891e;
+}
+
+textarea:focus, input:focus{ /*tira outline feio >:) */
+  outline: none;
+}
+
+@media (max-width: 954px) {
+  .signup-container {
+    flex-direction: column; /* Altera a direção para coluna */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 20px; /* Ajusta o espaçamento entre os elementos */
+  }
+
+  .background-signup, 
+  .background-login {
+    width: 80%; /* Ajusta a largura para dispositivos menores */
+  }
+}
