@@ -7,11 +7,11 @@ rodando para uso através dos diretórios do próprio computador.
 
 ## Alunos integrantes da equipe
 
-* Arthur Castro Machado Murta 
-* Caio Ronan Horta
-* Leonardo Buldrini Marques
-* Vinícius Tavares Coimbra Ribeiro
-* Wanderson de Souza Pessoa 
+* Arthur Castro
+* Caio Ronan
+* Leonardo Buldrini
+* Vinícius Tavares
+* Wanderson de Souza 
 
 ## Professores responsáveis
 
